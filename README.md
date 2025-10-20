@@ -12,6 +12,24 @@ Chat with AI, upload documents (PDFs, audio files), and get intelligent response
 - 👤 **User Authentication** - Secure JWT-based authentication
 - 🎨 **Modern UI** - Streamlit interface with responsive design
 
+## Preview
+
+### Login Page
+
+![Login page](images/login_page.png "Title")
+
+### Chat Interface
+
+![Chat interface](images/chat_interface.png "Title")
+
+### Document Upload
+
+![Document upload](images/document_upload.png "Title")
+
+### Query Media Files
+
+![Query media files](images/query_media.png "Title")
+
 ## 🏗️ Architecture
 
 ```
@@ -39,8 +57,8 @@ Chat with AI, upload documents (PDFs, audio files), and get intelligent response
 ### 1. Clone the Repository
 
 ```bash
-mkdir insighthub && cd insighthub
 git clone https://github.com/nicpack/insighthub.git
+cd insighthub
 ```
 
 ### 2. Configure Environment Variables
@@ -54,6 +72,7 @@ docker-compose up --build
 ```
 
 The application will be available at:
+
 - **Frontend**: http://localhost:8501
 - **Backend API**: http://localhost:8000
 - **API Docs**: http://localhost:8000/docs
@@ -126,6 +145,7 @@ python -m app.core.db
 ## 📚 API Documentation
 
 Once the backend is running, visit:
+
 - **Swagger UI**: http://localhost:8000/docs
 - **ReDoc**: http://localhost:8000/redoc
 
@@ -141,20 +161,19 @@ Once the backend is running, visit:
 
 ### Environment Variables
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `POSTGRES_USER` | PostgreSQL username | - |
-| `POSTGRES_PASSWORD` | PostgreSQL password | - |
-| `POSTGRES_DB` | Database name | insighthub |
-| `OPENAI_API_KEY` | OpenAI API key | - |
-| `SECRET_KEY` | JWT secret key | - |
-| `ACCESS_TOKEN_EXPIRE_MINUTES` | Token expiration time | 30 |
+| Variable                      | Description           | Default    |
+| ----------------------------- | --------------------- | ---------- |
+| `POSTGRES_USER`               | PostgreSQL username   | user       |
+| `POSTGRES_PASSWORD`           | PostgreSQL password   | password   |
+| `POSTGRES_DB`                 | Database name         | insighthub |
+| `OPENAI_API_KEY`              | OpenAI API key        | sk-        |
+| `SECRET_KEY`                  | JWT secret key        | -          |
+| `ACCESS_TOKEN_EXPIRE_MINUTES` | Token expiration time | 30         |
 
 ### Supported File Types
 
 - **Documents**: PDF
 - **Audio**: MP3, WAV, MP4
-
 
 ## 📝 License
 
@@ -177,5 +196,3 @@ Project Link: [https://github.com/yourusername/insighthub](https://github.com/ni
 ---
 
 Made with ❤️ and 🤖
-
-
