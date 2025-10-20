@@ -1,0 +1,6 @@
+[submodule "insighthub-backend"]
+	path = insighthub-backend
+	url = https://github.com/NicPack/insighthub-backend
+[submodule "insighthub-frontend"]
+	path = insighthub-frontend
+	url = https://github.com/NicPack/insighthub-frontend
