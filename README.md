@@ -39,8 +39,8 @@ Chat with AI, upload documents (PDFs, audio files), and get intelligent response
 ### 1. Clone the Repository
 
 ```bash
-mkdir insighthub && cd insighthub
 git clone https://github.com/nicpack/insighthub.git
+cd insighthub
 ```
 
 ### 2. Configure Environment Variables
